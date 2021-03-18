@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 int main(void) {
-	int **x;// intÇü ´õºí Æ÷ÀÎÅÍ x ¼±¾ğ
+	printf("2018038016 ì´ìƒí˜¸\n");
+	int **x;// intí˜• ë”ë¸” í¬ì¸í„° x ì„ ì–¸
 
-	printf("sizeof(x)=%lu\n",sizeof(x));//4 Ãâ·Â 32ºñÆ® ¿î¿µÃ¼Á¦¿¡¼­ ÁÖ¼ÒÀúÀåÅ©±â 4bytes
-	printf("sizeof(*x)=%lu\n",sizeof(*x));//4 Ãâ·Â 32ºñÆ® ¿î¿µÃ¼Á¦¿¡¼­ ÁÖ¼ÒÀúÀåÅ©±â 4bytes
-	printf("sizeof(**x)=%lu\n",sizeof(**x));//4 Ãâ·Â int°ªÀ» ÀúÀåÇÏ´Â °÷ÀÌ±â ¶§¹®¿¡ 4bytes
+	printf("sizeof(x)=%lu\n",sizeof(x));//4 ì¶œë ¥ 32ë¹„íŠ¸ ìš´ì˜ì²´ì œì—ì„œ ì£¼ì†Œì €ì¥í¬ê¸° 4bytes
+	printf("sizeof(*x)=%lu\n",sizeof(*x));//4 ì¶œë ¥ 32ë¹„íŠ¸ ìš´ì˜ì²´ì œì—ì„œ ì£¼ì†Œì €ì¥í¬ê¸° 4bytes
+	printf("sizeof(**x)=%lu\n",sizeof(**x));//4 ì¶œë ¥ intê°’ì„ ì €ì¥í•˜ëŠ” ê³³ì´ê¸° ë•Œë¬¸ì— 4bytes
 }
