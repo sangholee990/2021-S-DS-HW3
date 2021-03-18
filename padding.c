@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 struct student{
-	char lastName[13]; //charÇü ¹è¿­ lastName ¼±¾ğ 13 bytes
-	int studentId; //intÇü º¯¼ö studentId ¼±¾ğ 4bytes
-	short grade; //shortÇü º¯¼ö grade ¼±¾ğ 2bytes
+	char lastName[13]; //charí˜• ë°°ì—´ lastName ì„ ì–¸ 13 bytes
+	int studentId; //intí˜• ë³€ìˆ˜ studentId ì„ ì–¸ 4bytes
+	short grade; //shortí˜• ë³€ìˆ˜ grade ì„ ì–¸ 2bytes
 };
 
 int main(void) {
+        printf("2018038016 ì´ìƒí˜¸\n");
+	struct student pst; //student í˜• pstì„ ì–¸
 
-	struct student pst; //student Çü pst¼±¾ğ
+	printf("size of student = %ld\n",sizeof(struct student)); // êµ¬ì¡°ì²´ studentì˜ í¬ê¸° ì¶œë ¥16+4+4= 20bytes ì¶œë ¥
+	printf("size of int = %ld\n",sizeof(int));//int ìë£Œí˜•ì˜ í¬ê¸° ì¶œë ¥
+	printf("size of short = %ld\n",sizeof(short));//short ìë£Œí˜•ì˜ í¬ê¸° ì¶œë ¥
 
-	printf("size of student = %ld\n",sizeof(struct student)); // ±¸Á¶Ã¼ studentÀÇ Å©±â Ãâ·Â16+4+4= 20bytes Ãâ·Â
-	printf("size of int = %ld\n",sizeof(int));//int ÀÚ·áÇüÀÇ Å©±â Ãâ·Â
-	printf("size of short = %ld\n",sizeof(short));//short ÀÚ·áÇüÀÇ Å©±â Ãâ·Â
-
-	// 13+4+2 =19·Î Ãâ·Â µÇÁö ¾Ê´Â ÀÌÀ¯´Â paddingÀ» ÇÏ±â ¶§¹® 13(16)+4(4)+2(4)=(24)·Î Ãâ·ÂµÈ´Ù
+	// 13+4+2 =19ë¡œ ì¶œë ¥ ë˜ì§€ ì•ŠëŠ” ì´ìœ ëŠ” paddingì„ í•˜ê¸° ë•Œë¬¸ 13(16)+4(4)+2(4)=(24)ë¡œ ì¶œë ¥ëœë‹¤
 }
