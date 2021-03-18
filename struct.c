@@ -4,42 +4,44 @@ struct student1{
 	char lastName;
 	int studentId;
 	char grade;
-}; //±¸Á¶Ã¼ student1 ¼±¾ğ
+}; //êµ¬ì¡°ì²´ student1 ì„ ì–¸
 
 typedef struct{
 	char lastName;
 	int studentId;
 	char grade;
-}student2; //±¸Á¶Ã¼ student2 ¼±¾ğ
+}student2; //êµ¬ì¡°ì²´ student2 ì„ ì–¸
 
 int main(void) {
-	struct student1 st1={'A',100,'A'}; //student1 Çü st1¿¡ °ªÀ» ´ëÀÔ
+	
+	printf("2018038016 ì´ìƒí˜¸\n");
+	struct student1 st1={'A',100,'A'}; //student1 í˜• st1ì— ê°’ì„ ëŒ€ì…
 
-	printf("st1.lastName=%c\n",st1.lastName); // ÇĞ»ı1ÀÇ ÀÌ¸§ Ãâ·Â
-	printf("st1.studentId=%d\n",st1.studentId);// ÇĞ»ı1ÀÇ ÇĞ¹ø Ãâ·Â
-	printf("st1.grade=%c\n",st1.grade);// ÇĞ»ı1ÀÇ ¼ºÀû Ãâ·Â
+	printf("st1.lastName=%c\n",st1.lastName); // í•™ìƒ1ì˜ ì´ë¦„ ì¶œë ¥
+	printf("st1.studentId=%d\n",st1.studentId);// í•™ìƒ1ì˜ í•™ë²ˆ ì¶œë ¥
+	printf("st1.grade=%c\n",st1.grade);// í•™ìƒ1ì˜ ì„±ì  ì¶œë ¥
 
-	student2 st2={'B',200,'B'}; // student2 Çü st2¿¡ °ªÀ» ´ëÀÔ
+	student2 st2={'B',200,'B'}; // student2 í˜• st2ì— ê°’ì„ ëŒ€ì…
 
-	printf("\nst2.lastName=%c\n",st2.lastName);// ÇĞ»ı2ÀÇ ÀÌ¸§ Ãâ·Â
-	printf("st2.studentId=%d\n",st2.studentId);// ÇĞ»ı2ÀÇ ÇĞ¹ø Ãâ·Â
-	printf("\nst2.grade=%c\n",st2.grade);// ÇĞ»ı2ÀÇ ¼ºÀû Ãâ·Â
+	printf("\nst2.lastName=%c\n",st2.lastName);// í•™ìƒ2ì˜ ì´ë¦„ ì¶œë ¥
+	printf("st2.studentId=%d\n",st2.studentId);// í•™ìƒ2ì˜ í•™ë²ˆ ì¶œë ¥
+	printf("\nst2.grade=%c\n",st2.grade);// í•™ìƒ2ì˜ ì„±ì  ì¶œë ¥
 
-	student2 st3; //student2 Çü st3 ¼±¾ğ
+	student2 st3; //student2 í˜• st3 ì„ ì–¸
 
-	st3=st2; //±¸Á¶Ä¡È¯
+	st3=st2; //êµ¬ì¡°ì¹˜í™˜
 
-	printf("\nst3.lastName=%c\n",st3.lastName); //ÇĞ»ı3ÀÇ ÀÌ¸§ Ãâ·Â
-	printf("st3.studentId=%d\n",st3.studentId); //ÇĞ»ı3ÀÇ ÇĞ¹ø Ãâ·Â
-	printf("st3.grade=%c\n",st3.grade);//ÇĞ»ı3ÀÇ ¼ºÀû Ãâ·Â
-	// Ãâ·ÂÀÌ ÇĞ»ı2¿Í °°ÀÌ Ãâ·ÂµÊ (±¸Á¶Ä¡È¯ st3=st2ÀÌ »ç¿ë °¡´ÉÇÔ! ±× ÀÌÀü¹öÀü¿¡¼­´Â Á÷Á¢ ³Ö¾ú¾î¾ßÇÔ)
+	printf("\nst3.lastName=%c\n",st3.lastName); //í•™ìƒ3ì˜ ì´ë¦„ ì¶œë ¥
+	printf("st3.studentId=%d\n",st3.studentId); //í•™ìƒ3ì˜ í•™ë²ˆ ì¶œë ¥
+	printf("st3.grade=%c\n",st3.grade);//í•™ìƒ3ì˜ ì„±ì  ì¶œë ¥
+	// ì¶œë ¥ì´ í•™ìƒ2ì™€ ê°™ì´ ì¶œë ¥ë¨ (êµ¬ì¡°ì¹˜í™˜ st3=st2ì´ ì‚¬ìš© ê°€ëŠ¥í•¨! ê·¸ ì´ì „ë²„ì „ì—ì„œëŠ” ì§ì ‘ ë„£ì—ˆì–´ì•¼í•¨)
 
-	/* equality test */ //µ¿µî¼º °Ë»ç
+	/* equality test */ //ë™ë“±ì„± ê²€ì‚¬
 	/*
 	 if(st3==st2)
 	     printf("equal\n");
 	 else
 	     printf("not equal\n");
-	 */ // ÁÖ¼®À» Ç®¸é ¿À·ù°¡ ³­´Ù ÀÏÀÏÈ÷ ºñ±³ ÇØÁà¾ßµÊ ex) lastName studentId grade
+	 */ // ì£¼ì„ì„ í’€ë©´ ì˜¤ë¥˜ê°€ ë‚œë‹¤ ì¼ì¼íˆ ë¹„êµ í•´ì¤˜ì•¼ë¨ ex) lastName studentId grade
 
 }
