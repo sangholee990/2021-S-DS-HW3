@@ -1,16 +1,17 @@
 #include <stdio.h>
 
-void print1(int *ptr,int rows);//Ãâ·Â ÇÔ¼ö print1 ¼±¾ğ
+void print1(int *ptr,int rows);//ì¶œë ¥ í•¨ìˆ˜ print1 ì„ ì–¸
 
 int main(void) {
-	int one[]={0,1,2,3,4};//int Çü ¹è¿­ one ¼±¾ğ
+	printf("2018038016 ì´ìƒí˜¸\n");
+	int one[]={0,1,2,3,4};//int í˜• ë°°ì—´ one ì„ ì–¸
 
-	printf("one     =%p\n",one);//oneÀÇ °ª Ãâ·Â
-	printf("&one    =%p\n",&one);//oneÀÇ ÁÖ¼Ò Ãâ·Â
-	printf("&one[0]     =%p\n",&one[0]);//one[0]ÀÇ ÁÖ¼ÒÃâ·Â
+	printf("one     =%p\n",one);//oneì˜ ê°’ ì¶œë ¥
+	printf("&one    =%p\n",&one);//oneì˜ ì£¼ì†Œ ì¶œë ¥
+	printf("&one[0]     =%p\n",&one[0]);//one[0]ì˜ ì£¼ì†Œì¶œë ¥
 	printf("\n");
 
-	print1(&one[0],5);//one¹è¿­ÀÇ ÁÖ¼Ò¿Í µé¾îÀÖ´Â °ª Ãâ·Â
+	print1(&one[0],5);//oneë°°ì—´ì˜ ì£¼ì†Œì™€ ë“¤ì–´ìˆëŠ” ê°’ ì¶œë ¥
 
 	return 0;
 }
@@ -18,10 +19,10 @@ int main(void) {
 void print1(int *ptr,int rows)
 {/*print out a one-dimensional array using a pointer */
 
-	int i;//Áö¿ªº¯¼ö i¼±¾ğ ¹İº¹¹® »ç¿ë ¿ëµµ
+	int i;//ì§€ì—­ë³€ìˆ˜ iì„ ì–¸ ë°˜ë³µë¬¸ ì‚¬ìš© ìš©ë„
 	printf("Address \t Contents\n");
 	for(i=0;i<rows;i++)
-		printf("%p \t %5d\n",ptr+i,*(ptr+i));// one¹è¿­ÀÇ ÁÖ¼Ò, ¿ä¼ÒÀÇ °ª Ãâ·Â
+		printf("%p \t %5d\n",ptr+i,*(ptr+i));// oneë°°ì—´ì˜ ì£¼ì†Œ, ìš”ì†Œì˜ ê°’ ì¶œë ¥
 	printf("\n");
 
 }
